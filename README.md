@@ -24,61 +24,61 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
   3. In the python shell type in ```import cv2``` and in the next line ```cv2.__version__``` and it should print ```3.1.0```.
 
 #### For MacOSX:
-1.First step,install [Xcode](https://developer.apple.com/xcode/) which is combination of IDE and software developement tools for developing applications on OSX AND iOS platform.
+1. First step,install [Xcode](https://developer.apple.com/xcode/) which is combination of IDE and software developement tools for developing applications on OSX AND iOS platform.
 
 
-2.Install [homebrew](http://brew.sh/).
+2. Install [homebrew](http://brew.sh/).
 
 
-3.To update brew simply execute:
+3. To update brew simply execute:
 	
 	$ brew update
 
-4.Install user specific version of python.
+4. Install user specific version of python.
 
     $ brew install python
 
-5.However, before we proceed, we need to update our PATH  in our ~/.bash_profile  file to indicate that we want to use Homebrew 		packages before any system libraries or packages.
+5. However, before we proceed, we need to update our PATH  in our ~/.bash_profile  file to indicate that we want to use Homebrew 		packages before any system libraries or packages.
 	Open up your ~/.bash_profile  file in your favorite editor (if it does not exist, create it), and append the following lines to the file:
 
 		# Homebrew
 		export PATH=/usr/local/bin:$PATH
 
-	From there, reload your ~./bash_profile  file to ensure the changes have been made:
+* From there, reload your ~./bash_profile  file to ensure the changes have been made:
 
 		$ source ~/.bash_profile
 
-	As a sanity check, let’s confirm that we are using the Homebrew version of Python rather than the system one:
+* As a sanity check, let’s confirm that we are using the Homebrew version of Python rather than the system one:
 
 		$ which python
 
-	If your output of which python  is /usr/local/bin/python , then you are indeed using the Homebrew version of Python. And if your output is /usr/bin/python , then you are still using the system version of Python — and you need to go back and ensure that your ~/.bash_profile  file is updated and reloaded correctly.	
-6.[Optional]Installing virtualenv and virtualenvwrapper.
+* If your output of which python  is /usr/local/bin/python , then you are indeed using the Homebrew version of Python. And if your  output is /usr/bin/python , then you are still using the system version of Python — and you need to go back and ensure that your ~/.bash_profile  file is updated and reloaded correctly.	
+6. [Optional]Installing virtualenv and virtualenvwrapper.
 	
 		$ pip install virtualenv virtualenvwrapper
 	
-	Again, we need to update our ~/.bash_profile  file by appending the following two lines:
+* Again, we need to update our ~/.bash_profile  file by appending the following two lines:
 	
 		# Virtualenv/VirtualenvWrapper
 		source /usr/local/bin/virtualenvwrapper.sh
 	
-	After updating the ~/.bash_profile  file, we need to reload it:
+* After updating the ~/.bash_profile  file, we need to reload it:
 	
 		$ source ~/.bash_profile
 	
-	At this point, both virtualenv  and virtualenvwrapper  are installed correctly, so we can create our cv  virtual environment:
+* At this point, both virtualenv  and virtualenvwrapper  are installed correctly, so we can create our cv  virtual environment:
 	
 		$ mkvirtualenv cv
 
-7.We need to install NumPy since the OpenCV Python bindings represent images as multi-dimensional NumPy arrays:
+7. We need to install NumPy since the OpenCV Python bindings represent images as multi-dimensional NumPy arrays:
 
 		$ pip install numpy
 
-	Now that our developement environment is set up and configured,its time for us to get into real work.
+* Now that our developement environment is set up and configured,its time for us to get into real work.
 
 		$ brew install cmake pkg-config
 
-	Install necessary image I/O packages
+* Install necessary image I/O packages
 
 		$ brew install jpeg libpng libtiff openexr
 		$ brew install eigen tbb	
@@ -91,7 +91,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ cd opencv
 		$ git checkout 3.0.0		
 
-	[Optional]	
+    [Optional]	
 
 		$ cd ~
 		$ git clone https://github.com/Itseez/opencv_contrib
@@ -103,7 +103,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ cd ~/opencv
 		$ mkdir build
 		$ cd build
-	Where we’ll use CMake to configure our build
+* Where we’ll use CMake to configure our build
 		$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
 			-D PYTHON2_PACKAGES_PATH=~/.virtualenvs/cv/lib/python2.7/site-packages \
 			-D PYTHON2_LIBRARY=/usr/local/Cellar/python/2.7.10/Frameworks/Python.framework/Versions/2.7/bin \
@@ -142,13 +142,14 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		#code end----------
 		
 
-	And then execute it via:
+* And then execute it via:
+
 
 			python test_akaze.py
 
 
 	
-	Assuming you have download the jurassic_world.jpg  image and placed it in the same directory as your test_akaze.py  script, you would see the image with green points on it as output.Voila!Your opencv is set-up and running.			
+* Assuming you have download the jurassic_world.jpg  image and placed it in the same directory as your test_akaze.py  script, you would see the image with green points on it as output.Voila!Your opencv is set-up and running.			
 				
 	
 #### For Linux:
