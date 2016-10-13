@@ -54,7 +54,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
 * If your output of which python  is /usr/local/bin/python , then you are indeed using the Homebrew version of Python. And if your  output is /usr/bin/python , then you are still using the system version of Python — and you need to go back and ensure that your ~/.bash_profile  file is updated and reloaded correctly.
 
-	
+
 6. [Optional]Installing virtualenv and virtualenvwrapper.
 	
 		$ pip install virtualenv virtualenvwrapper
@@ -87,7 +87,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ brew install eigen tbb	
 
 
-8.Alright, our system is all setup — time to compile and install OpenCV 3.0 with Python 2.7+ support.
+8. Alright, our system is all setup — time to compile and install OpenCV 3.0 with Python 2.7+ support.
 
 		$ cd ~
 		$ git clone https://github.com/Itseez/opencv.git
@@ -101,7 +101,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ cd opencv_contrib
 		$ git checkout 3.0.0
 
-9.Let’s setup our OpenCV build by creating the build  directory:
+9. Let’s setup our OpenCV build by creating the build  directory:
 
 		$ cd ~/opencv
 		$ mkdir build
@@ -124,7 +124,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
 
 
-10.After all this work, let’s give our OpenCV 3.0 install a test drive!
+10. After all this work, let’s give our OpenCV 3.0 install a test drive!
 	Open a new file ,name it test_akaze.py , and insert the following code:
 
 
