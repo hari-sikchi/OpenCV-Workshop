@@ -25,7 +25,9 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
 #### For MacOSX:
 1.First step,install [Xcode](https://developer.apple.com/xcode/) which is combination of IDE and software developement tools for developing applications on OSX AND iOS platform.
+
 2. Install [homebrew](http://brew.sh/).
+
 3.To update brew simply execute:
 	
 	$ brew update
@@ -114,11 +116,12 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
 10.After all this work, let’s give our OpenCV 3.0 install a test drive!
 	Open a new file ,name it test_akaze.py , and insert the following code:
+
+
 		#code start--------------
 			# import the necessary packages
 			from __future__ import print_function
 			import cv2
-			 
 			# load the image and convert it to grayscale
 			image = cv2.imread("jurassic_world.jpg")
 			gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -136,10 +139,13 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 			cv2.waitKey(0)
 		#code end----------
 		
+
 	And then execute it via:
 
 			python test_akaze.py
 
+
+	
 	Assuming you have download the jurassic_world.jpg  image and placed it in the same directory as your test_akaze.py  script, you would see the image with green points on it as output.Voila!Your opencv is set-up and running.			
 				
 	
