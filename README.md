@@ -26,7 +26,9 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 #### For MacOSX:
 1.First step,install [Xcode](https://developer.apple.com/xcode/) which is combination of IDE and software developement tools for developing applications on OSX AND iOS platform.
 
-2. Install [homebrew](http://brew.sh/).
+
+2.Install [homebrew](http://brew.sh/).
+
 
 3.To update brew simply execute:
 	
@@ -36,7 +38,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
     $ brew install python
 
-5.	However, before we proceed, we need to update our PATH  in our ~/.bash_profile  file to indicate that we want to use Homebrew 		packages before any system libraries or packages.
+5.However, before we proceed, we need to update our PATH  in our ~/.bash_profile  file to indicate that we want to use Homebrew 		packages before any system libraries or packages.
 	Open up your ~/.bash_profile  file in your favorite editor (if it does not exist, create it), and append the following lines to the file:
 
 		# Homebrew
