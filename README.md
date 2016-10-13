@@ -52,7 +52,9 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 
 		$ which python
 
-* If your output of which python  is /usr/local/bin/python , then you are indeed using the Homebrew version of Python. And if your  output is /usr/bin/python , then you are still using the system version of Python — and you need to go back and ensure that your ~/.bash_profile  file is updated and reloaded correctly.	
+* If your output of which python  is /usr/local/bin/python , then you are indeed using the Homebrew version of Python. And if your  output is /usr/bin/python , then you are still using the system version of Python — and you need to go back and ensure that your ~/.bash_profile  file is updated and reloaded correctly.
+
+	
 6. [Optional]Installing virtualenv and virtualenvwrapper.
 	
 		$ pip install virtualenv virtualenvwrapper
@@ -69,6 +71,7 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 * At this point, both virtualenv  and virtualenvwrapper  are installed correctly, so we can create our cv  virtual environment:
 	
 		$ mkvirtualenv cv
+
 
 7. We need to install NumPy since the OpenCV Python bindings represent images as multi-dimensional NumPy arrays:
 
@@ -103,7 +106,10 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ cd ~/opencv
 		$ mkdir build
 		$ cd build
+
 * Where we’ll use CMake to configure our build
+		
+
 		$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local \
 			-D PYTHON2_PACKAGES_PATH=~/.virtualenvs/cv/lib/python2.7/site-packages \
 			-D PYTHON2_LIBRARY=/usr/local/Cellar/python/2.7.10/Frameworks/Python.framework/Versions/2.7/bin \
@@ -115,6 +121,8 @@ Clone this repository or [download](https://github.com/nikv96/OpenCV-Workshop/ar
 		$ make -j4
 		$ make install
 		$ sudo make install
+
+
 
 10.After all this work, let’s give our OpenCV 3.0 install a test drive!
 	Open a new file ,name it test_akaze.py , and insert the following code:
